@@ -1,0 +1,33 @@
+body{
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+.bg-color-celeste {
+    background-color: #4e7296;
+}
+.navbar-brand,
+.nav-link {
+    color: white;
+}
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+.quitar-focus:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Carrusel */
+.carousel-container-custom {
+    overflow: hidden;
+    box-shadow: 0px rgba(0, 0, 0, 0.1);
+}
+.carousel-inner .carousel-item img {
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+#Contenedor {
+    height: 100%;
+    width: 100%;
+}

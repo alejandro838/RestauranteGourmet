@@ -1,0 +1,320 @@
+/*
+=================================================================
+=                       COLORES DE FONDO                        =
+=================================================================
+*/
+.bg-color-blanco-azulado{
+    background-color:#f2ffff;
+}
+.bg-color-celeste{
+    background-color:#beeaf3;
+}
+.bg-color-gris-azulado-claro{
+    background-color:#d9e0ec;
+}
+.bg-color-white{
+    background-color: white;
+}
+.bg-color-black{
+    background-color: black;
+}
+.bg-color-red{
+    background-color:red;
+}
+/*
+=================================================================
+=                       COLORES DE TEXTO                        =
+=================================================================
+*/
+.text-color-white{
+    color:white;
+}
+.text-color-black{
+    color:black;
+}
+/*
+=================================================================
+=                       TAMAÑO DE FUENTE                        =
+=================================================================
+*/
+.text-size{
+    font-size: 14px;
+}
+.text-size-sm{
+    font-size: 20px;
+}
+
+/*
+=================================================================
+=                            BOTONES                            =
+=================================================================
+*/
+.btn-base{
+    width:200px;
+    height:35px;
+    border-radius:5px;
+    border:none;
+    cursor:pointer;
+    margin-right:10px;
+    background-color:#d9e0ec;
+}
+.btn-base:hover{
+    transform:scale(1.1);
+    transition:all 0.5s ease-in-out;
+}
+.btn-base:disabled{
+    opacity:0.5;
+    cursor:not-allowed;
+}
+.btn-base img{
+    vertical-align:middle;
+    margin-right:10px;
+}
+
+/*SEGUNDO BOTON*/
+.boton-uno{
+  font-size: 1.2rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: rgb(14, 14, 26);
+  color: rgb(234, 234, 234);
+  font-weight: 700;
+  transition: 0.6s;
+  box-shadow: 0px 0px 60px #1f4c65;
+  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+}
+.boton-uno:active {
+  scale: 0.92;
+}
+.boton-uno:hover {
+  background: rgb(2,29,78);
+  background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+  color: rgb(4, 4, 38);
+}
+
+/*
+=================================================================
+=                          INPUTS/SELECT                        =
+=================================================================
+*/
+/*INPUT BASE*/
+.input-base{
+    background-color:#fafbfc;
+    border-radius: 5px;
+    border:1px solid lightgray;
+}
+.input-base:disabled{
+    opacity:0.5;
+    cursor:not-allowed;
+}
+.input-base:focus{
+    outline:none;
+    box-shadow: none;
+    border-color: lightgray !important;
+}
+/*SELECT BASE*/
+.select-base{
+    border:1px solid lightgray;
+    background-color:#fafbfc;
+    cursor:pointer;
+}
+.select-base:focus{
+    outline:none;
+    box-shadow: none;
+    border-color: lightgray !important;
+}
+.select-base:disabled{
+    opacity:0.5;
+    cursor:not-allowed;
+}
+/*
+=================================================================
+=                            TABLAS                             =
+=================================================================
+*/
+.table-uno{
+    width:100%;       
+    text-align:left;        
+    border-radius: 10px;
+    border-spacing:0;
+    overflow: hidden;     
+}
+.table-uno tr th{
+    font-size:14px;    
+    background-color:#beeaf3;
+    padding-left:10px;
+    height:40px;
+}
+.table-uno tr td{
+    padding-left:10px;
+    height:40px;
+    box-shadow: 0 0 0 0.5px lightgray;
+    cursor:pointer;
+    user-select:none;
+}
+.table-uno tbody tr:nth-child(odd){
+    background-color:white;
+}
+/*
+=================================================================
+=                    BARRA DE NAVEGACIÓN                        =
+=================================================================
+*/
+.ul-menu{
+    background-color:#beeaf3;
+}
+.ul-menu >li{
+   cursor:pointer;
+}
+
+/*
+=================================================================
+=                          FONDOS                               =
+=================================================================
+*/
+.fondo-uno{
+    width:100%;
+    height:100%;
+    background-image: url(../Imagen/Fondo/FondoFarmacia1.png);
+    background-size: cover; /* hace que se ajuste sin deformarse */
+    background-position: center; /* centra la imagen */
+    background-repeat: no-repeat; /* evita que se repita */
+    animation: iteracion-fondo 3s infinite alternate;
+}
+@keyframes iteracion-fondo{
+    from{
+        background-image: url(../Imagen/Fondo/FondoFarmacia2.png);
+    }to{
+        background-image: url(../Imagen/Fondo/FondoFarmacia1.png);
+    }
+}
+
+@media(max-width: 800px){
+    .fondo-uno{
+    width:100%;
+    height:100%;
+    background-image: url(../Imagen/Fondo/FondoFarmaciaMovil1.png);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    animation: iteracion-fondo-movil 3s infinite alternate;
+}
+}
+@keyframes iteracion-fondo-movil{
+    from{
+        background-image:url(../Imagen/Fondo/FondoFarmaciaMovil2.png);
+    }to{
+        background-image:url(../Imagen/Fondo/FondoFarmaciaMovil1.png);
+    }
+}
+
+.fondo-dos{
+    width:100%;
+    height:100%;
+    background-image: url(../Imagen/Fondo/FondoCuatro.jpg);
+    background-size: cover; /* hace que se ajuste sin deformarse */
+    background-position: center; /* centra la imagen */
+    background-repeat: no-repeat; /* evita que se repita */
+}
+.fondo-transparente{
+    background: rgba(255, 255, 255, 0.1);  /* Fondo semi-transparente */
+    backdrop-filter: blur(10px);            /* Desenfoque del fondo */
+}
+.fondo-transparente-uno{
+     background: rgba(255, 255, 255, 0.1);  /* Fondo semi-transparente */
+  
+}
+/*
+=================================================================
+=                          ALERTAS                              =
+=================================================================
+*/
+.alerta-uno{
+    width:100%;
+    height:100%;
+    z-index:5000;
+    position: fixed;
+}
+.alerta-uno > .fondo{
+    width:100%;
+    height:100%;
+    position: fixed;
+    z-index: 5000;
+    background-color: black;
+    opacity: 0.4;
+}
+.alerta-uno > .alerta{
+        width:210px;
+        height:235px;
+        background-color: rgb(211, 208, 208);
+        border-radius: 10px;
+        padding: 10px 10px;
+        position: fixed;
+        z-index: 50001;
+        inset:0;
+        margin:auto;
+        text-align: center;
+        align-content: center;
+        overflow: hidden;
+}
+.alerta-uno > .alerta img{
+    width:100px;
+    margin-bottom: 10px;
+}
+.alerta-uno > .alerta  button{
+    border:none;
+    border-radius: 5px;
+    width:100px;
+    height:35px;
+    color:white;
+    background-color: rgb(238, 53, 238);
+    cursor:pointer;
+}
+
+/*
+=================================================================
+=                          BARRA DE CARGA                       =
+=================================================================
+*/
+.barra-carga-uno{
+    width:100%;
+    height:10px;    
+    border: none;    
+}
+.barra-carga-uno > .progreso{
+    width:0%;
+    height:30px;    
+    background: rgba(255, 255, 255, 0.1);  /* Fondo semi-transparente */
+    text-align: center;
+    color:white;
+    animation: llenar 2s forwards;
+    border-radius: 10px;
+    align-content: center;
+}
+@keyframes llenar {
+    to{width:100%}
+}
+
+
+
+
+
+
+
+
+
+
+/*QUITAR FOCUS*/
+.quitar-focus:focus{
+    outline:none;
+    box-shadow: none;
+}
+/*Agrandar elemento*/
+.scalar-elemento:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+}
